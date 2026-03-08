@@ -10,7 +10,6 @@ body {
     font-weight: 400;
     color: rgb(255, 255, 255);
     font-size: 16px;
-    background: #000;
 }
 
 a {
@@ -24,7 +23,6 @@ img {
 .wrapper {
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgb(68, 12, 68) 100%);
     width: 100%;
-    overflow-x: hidden;
 }
 
 .container {
@@ -120,8 +118,7 @@ header nav ul li.btn a:hover,  .email .block button:hover {
     margin: 30px 0;
 }
 
-.hero--info .btn , 
-.hero-about .info .btn  {
+.hero--info .btn {
     background: rgb(236, 74, 242);
     border-radius: 50px;
     padding: 15px 30px;
@@ -240,7 +237,7 @@ header nav ul li.btn a:hover,  .email .block button:hover {
 }
 
 .features {
-    background: url('img/Group 1321.png') no-repeat center center fixed;
+    background: url('Group 1321.png') no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0;
 }
@@ -377,161 +374,6 @@ header nav ul li.btn a:hover,  .email .block button:hover {
     align-items: center;
     gap: 10px;
 }
-
-.hero-about .info {
-    width: 500px;
-    padding: 250px 0;
-}
-
-.hero-about .info h1 {
-    margin-bottom: 15px;
-    font-size: 30px;
-}
-
-.hero-about .info .btn {
-    margin-top: 20px;
-}
-
-.hero-about {
-    position: relative;
-}
-
-.hero-about img {
-    position: absolute;
-    right: -450px;
-    top: 0;
-}
-
-.work {
-    padding: 80px 0;
-}
-
-.work h2 {
-    font-size: 25px;
-    margin-bottom: 40px;
-}
-
-.work .blocks {
-    justify-content: space-between;
-    display: flex;
-}
-
-.work .blocks .block {
-    width: 25%;
-    border-radius: 10px;
-    padding: 50px 35px;
-    background: #1b0f1c;
-}
-
-.work .blocks .block h3 {
-    font-size: 20px;
-    margin: 20px 0;
-}
-
-.work .blocks .block .badge {
-    border-radius: 7px;
-    padding: 10px 20px;
-}
-
-.work .blocks .block .badge.purple {
-    background: #430153;
-}
-
-.work .blocks .block .badge.brown {
-    background: #5a1b01;
-}
-
-.work .blocks .block .badge.green {
-    background: #004e32;
-}
-
-.hero-contact h1 {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 30px;
-    font-size: 33px;
-}
-
-.hero-contact p {
-    text-align: center;
-}
-
-.hero-contact img {
-    width: 70%;
-    margin: 80px 15%;
-}
-
-.feedback {
-    padding: 70px 0;
-    background: #1C140F;
-}
-
-.feedback h2 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.feedback p {
-     text-align: center;
-     margin-top: 10px;
-}
-.feedback form {
-    margin: 80px auto;
-    width: 600px;
-}
-
-.feedback form .inline {
-    justify-content: space-between;
-    display: flex;
-}
-
-.feedback form .inline>div {
-    width: 50%;
-}
-
-.feedback form label {
-    color: #4F4F4F ;
-    font-size: 14px;
-}
-
-.feedback form input ,
-.feedback form textarea {
-    background: #4F4F4F;
-    border-radius: 10px;
-    border: 0.6px solid #CECECE;
-    display: block;
-    width: 90%;
-    padding: 15px 10px;
-    outline: none;
-    color: #fff;
-    margin-top: 7px;
-    margin-bottom: 20px;
-}
-
-.feedback form .one-line {
-    width: 96%;
-}
-.feedback form textarea {
-    resize: none;
-    height: 200px;
-}
-
- .feedback form button {
-    background: #DC7000;
-    border-radius: 5px;
-    border: none;
-    float: right;
-    cursor: pointer;
-    color: #fff;
-    padding: 15px 35px;
-    transition: 500ms;
-}
-
-.feedback form button:hover {
-    background: #d13d03;
-}
-
 
 footer {
     background: #000 ;
