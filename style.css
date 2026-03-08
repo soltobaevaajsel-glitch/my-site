@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgb(68, 12, 68) 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo,
+footer .block .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color:aliceblue
+}
+
+header nav ul li.active::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: rgb(236, 74, 242);
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+   border-bottom: 5px solid rgb(236, 74, 242);
+}
+
+header nav ul li.btn a , .email .block button{
+    background: rgb(201, 55, 250);
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover,  .email .block button:hover {
+    background: blueviolet;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 530px;
+    padding-bottom: 70px;
+    margin-left: 200px;
+}
+
+.hero--info h2 {
+    color: rgb(236, 74, 242);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn , 
+.hero-about .info .btn  {
+    background: rgb(236, 74, 242);
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    transition: all 500ms ease;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    display: block;
+    margin-left: 1100px;
+    margin-right: 100px;
+    margin-top: -300px;
+}
+
+.container-trending h3 {
+    font-size: 31px;
+    font-weight: 600px;
+    margin-left: 200px;
+}
+
+.container-trending .see-all {
+    display: block;
+    float: right;
+    color: aliceblue;
+    background: rgb(84, 33, 88);
+    border-radius: 5px;
+    padding: 12px 23px;
+    margin-right: 100px;
+    margin-top: -50px;
+    transition: all 500ms;
+}
+
+.container-trending .see-all:hover {
+    transform: scale(1.1);
+}
+
+.container-trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 100px;
+    gap: 80px;
+}
+
+.container-trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.block3 img {
+    width: 900px;
+    border-radius: 10%;
+}
+
+.block2 img {
+    width: 900px;
+    border-radius: 10%;
+}
+
+.block1 img {
+    width: 760px;
+    border-radius: 10%;
+}
+
+.block4 img {
+    width: 700px;
+    border-radius: 10%;
+}
+
+.container-trending .games span img {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+    width: 50px;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+    margin-left: 500px;
+}
+
+.banner {
+    padding: 80px 0;
+    width: 1500px;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 200%;
+    margin-bottom: 30px;
+    width: 1300px;
+    text-align: justify;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.features {
+    background: url('img/Group 1321.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.features h3 ,
+.features p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h3 {
+    font-size: 30px;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block img {
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.projects p {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.projects .see-all {
+    display: block;
+    float: none;
+    color: aliceblue;
+    background: rgb(84, 33, 88);
+    border-radius: 5px;
+    padding: 12px 23px;
+    transition: all 500ms;
+    margin: 0 auto;
+    width: 60px;
+    text-align: center;
+}
+
+.projects .see-all:hover {
+    transform: scale(1.1);
+}
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.email .block {
+    background: rgb(44, 21, 38) ;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+    right: -20px;
+    flex: 1;
+    height: 10px;
+    padding-right: 120px;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+ .email .block button {
+    cursor: pointer;
+    border: 0;
+    padding: 13px 17px;
+    margin-left: 455px;
+    z-index: 2;
+    height: 40px;
+    position: absolute;
+    color: #fff;
+}
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-about .info {
+    width: 500px;
+    padding: 250px 0;
+}
+
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-about .info .btn {
+    margin-top: 20px;
+}
+
+.hero-about {
+    position: relative;
+}
+
+.hero-about img {
+    position: absolute;
+    right: -450px;
+    top: 0;
+}
+
+.work {
+    padding: 80px 0;
+}
+
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work .blocks {
+    justify-content: space-between;
+    display: flex;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1b0f1c;
+}
+
+.work .blocks .block h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.work .blocks .block .badge {
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.work .blocks .block .badge.purple {
+    background: #430153;
+}
+
+.work .blocks .block .badge.brown {
+    background: #5a1b01;
+}
+
+.work .blocks .block .badge.green {
+    background: #004e32;
+}
+
+.hero-contact h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.hero-contact p {
+    text-align: center;
+}
+
+.hero-contact img {
+    width: 70%;
+    margin: 80px 15%;
+}
+
+.feedback {
+    padding: 70px 0;
+    background: #1C140F;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.feedback p {
+     text-align: center;
+     margin-top: 10px;
+}
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    justify-content: space-between;
+    display: flex;
+}
+
+.feedback form .inline>div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4F4F4F ;
+    font-size: 14px;
+}
+
+.feedback form input ,
+.feedback form textarea {
+    background: #4F4F4F;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 96%;
+}
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+ .feedback form button {
+    background: #DC7000;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 35px;
+    transition: 500ms;
+}
+
+.feedback form button:hover {
+    background: #d13d03;
+}
+
+
+footer {
+    background: #000 ;
+    padding: 50px 0;
+}
+
+footer .block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .block p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .block h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .block ul {
+    list-style: none;
+}
+
+footer .block ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #fff;
+}
+
+footer> p {
+    text-align: center;
+}
